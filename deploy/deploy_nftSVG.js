@@ -32,7 +32,8 @@ module.exports = async({
 
     log("NFT-Created");
 
-    log("Token-URI: ",await contractSVG.tokenURI(0));
+    console.log("Token-URI--1: ",await contractSVG.tokenURI(0));
+    console.log("Token-URI--2: ",await contractSVG.tokenURI(1));
 
     log("npx hardhat verify --network sepolia ", svgNFT.address);
 }
